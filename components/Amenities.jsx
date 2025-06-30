@@ -1,4 +1,5 @@
 'use client';
+import { useRef } from 'react';
 import styles from '../src/app/styles/Amenities.module.css';
 
 const amenities = [
@@ -42,24 +43,21 @@ const amenities = [
 
 export default function Amenities() {
   return (
-    <section className={styles.amenities_section} id="amenities">
-      {/* <h2 className={styles.section_header}>AMENITIES</h2> */}
-      <div className={styles.stacked_scroll}>
-        {amenities.map((item, idx) => (
-          <div
-            key={idx}
-            className={styles.sticky_slide}
-            style={{ backgroundImage: `url(${item.image})` }}
-          >
-            <div className={styles.overlay}>
-              <h2>{item.title}</h2>
-              <h1>{item.span}</h1>
-              <p>{item.text}</p>
-              <button>DISCOVER MORE</button>
-            </div>
+    <section className={styles.amenities_container} id="amenities">
+      {amenities.map((item, idx) => (
+        <div
+          key={idx}
+          className={styles.panel}
+          style={{ backgroundImage: `url(${item.image})` }}
+        >
+          <div className={styles.overlay}>
+            <h2>{item.title}</h2>
+            <h1>{item.span}</h1>
+            <p>{item.text}</p>
+            <button>DISCOVER MORE</button>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 }
