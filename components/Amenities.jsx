@@ -1,5 +1,4 @@
 'use client';
-import { useRef } from 'react';
 import styles from '../src/app/styles/Amenities.module.css';
 
 const amenities = [
@@ -43,11 +42,11 @@ const amenities = [
 
 export default function Amenities() {
   return (
-    <section className={styles.amenities_container} id="amenities">
+    <section className={styles.amenities_section} id="amenities">
       {amenities.map((item, idx) => (
         <div
           key={idx}
-          className={styles.panel}
+          className={styles.sticky_section}
           style={{ backgroundImage: `url(${item.image})` }}
         >
           <div className={styles.overlay}>

@@ -1,0 +1,115 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.modal h2 span {
+  color: #222;
+  font-weight: bold;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.form input,
+.form textarea {
+  /* width: 100%; */
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.captchaBox {
+  margin: 16px 0;
+}
+
+.form button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
