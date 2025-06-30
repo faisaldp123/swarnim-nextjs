@@ -1,0 +1,50 @@
+.floor_section {
+  padding: 100px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+
+.master_btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.plan_img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}

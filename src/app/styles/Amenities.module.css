@@ -1,0 +1,93 @@
+.amenities_section {
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+  background: black;
+  /* padding-bottom: 100px; */
+}
+
+.section_header {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 80px auto 60px;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.stacked_scroll {
+  position: relative;
+  height: 600vh; /* enough to scroll through all items */
+}
+
+.sticky_slide {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.sticky_slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 800px;
+  backdrop-filter: blur(4px);
+}
+
+.sticky_slide h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  color: #fff;
+}
+
+.sticky_slide h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffe68c;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.sticky_slide p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eee;
+  margin-bottom: 1.5rem;
+}
+
+.sticky_slide button {
+  padding: 10px 30px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffe68c;
+  color: #ffe68c;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sticky_slide button:hover {
+  background-color: #ffe68c;
+  color: black;
+}

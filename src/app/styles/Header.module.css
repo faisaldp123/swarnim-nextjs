@@ -1,0 +1,169 @@
+.main_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.header_wrapper {
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px 15px;
+    flex-wrap: wrap;
+}
+
+/* ✅ Centered and overlapping logo box */
+.logo_wrapper {
+  position: absolute;
+    left: 275px;
+    transform: translateY(20%);
+    z-index: 10;
+    bottom: -41px;
+}
+
+.center_nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.logo_box {
+  background: white;
+  padding: 10px 7px 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  text-align: center;
+  width: 110px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo_text {
+  color: black;
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+.logo_sub {
+  color: black;
+  font-size: 12px;
+}
+
+/* Navigation styles */
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.nav_links a,
+.nav_links button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav_links a:hover,
+.nav_links button:hover {
+  color: #ffd700;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: white;
+  color: black;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.dropdown_menu a {
+  display: block;
+  padding: 8px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.dropdown_menu a:hover {
+  background: #f0f0f0;
+}
+
+.cta_button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.cta_button:hover {
+  background: white;
+  color: black;
+}
+
+.menu_toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav_links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: black;
+    display: none;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .nav_links.open {
+    display: flex;
+  }
+
+  .cta_button {
+    display: none;
+  }
+
+  .menu_toggle {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .logo_wrapper {
+  position: absolute;
+    left: 30px;
+    transform: translateY(20%);
+    z-index: 10;
+    bottom: -41px;
+}
+}
+
