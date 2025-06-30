@@ -10,7 +10,7 @@ import Amenities from '../../components/Amenities';
 import FloorPlan from '../../components/FloorPlan';
 import Contact from '../../components/Contact';
 import EnquiryForm from '../../components/EnquiryForm';
-import ModalEnquiry from '../../components/ModalEnquiry';
+// import ModalEnquiry from '../../components/ModalEnquiry';
 
 export default function HomePage() {
   const [showPopup, setShowPopup] = useState(false);
@@ -37,9 +37,9 @@ export default function HomePage() {
       <Footer />
 
       {/* Enquiry Form Popup */}
-      <ModalEnquiry show={showPopup} onClose={() => setShowPopup(false)}>
-        <EnquiryForm />
-      </ModalEnquiry>
+      {/* <ModalEnquiry show={showPopup} onClose={() => setShowPopup(false)}> */}
+        <EnquiryForm show={showPopup} onClose={() => setShowPopup(false)}/>
+      {/* </ModalEnquiry> */}
     </main>
   );
 }
