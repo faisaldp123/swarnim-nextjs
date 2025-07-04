@@ -113,3 +113,36 @@
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@media (max-width: 468px) {
+  .modal {
+    padding: 20px 16px;
+    max-width: 90%;
+    margin: 0 27px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .checkboxRow {
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .captchaBox {
+    transform: scale(0.85);
+    transform-origin: left;
+  }
+
+  .form button[type='submit'] {
+    font-size: 14px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 13px;
+  }
+}
+
