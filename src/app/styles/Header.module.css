@@ -100,6 +100,7 @@
   padding: 8px 20px;
   white-space: nowrap;
   font-size: 14px;
+  color: black;
 }
 
 .dropdown_menu a:hover {
