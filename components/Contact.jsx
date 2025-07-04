@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
 
         <div className={styles.privacy_policy}>
-          <input type={styles.checkbox} />
+          <input type={styles.checkbox_one} />
           <label>I accept the privacy policy and terms of use</label>
         </div>
 
